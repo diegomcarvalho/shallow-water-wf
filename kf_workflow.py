@@ -72,7 +72,8 @@ if __name__ == '__main__':
         'octave/x_valid.txt',
         'octave/y.txt',
         'octave/y_gen.txt',
-        'octave/y_valid.txt'
+        'octave/y_valid.txt',
+        'octave/data.txt'
     )
 
     KF = KFS2d('1 10 10 100 10 2 2 0.1 10', outputs=KFS2d_output.future_list)

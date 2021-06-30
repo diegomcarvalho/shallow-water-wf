@@ -91,4 +91,9 @@ def mpca_ann(inputs=[],
         with open("mpca-ann/data/y_valid.tx", "w") as w:
             w.write(f.read())
 
-    return "cd mpca-ann; ../scripts/sed-mpca-src; ./runMPCA 1 4; ./annMLP 1 4"
+    with open(inputs[6], 'r') as f:
+        script_param = f.readline()
+
+    script_param = script_param.rstrip()
+
+    return f"cd mpca-ann; ../scripts/sed-mpca-src {script_param}; ./runMPCA 1 4; ./annMLP 1 4"

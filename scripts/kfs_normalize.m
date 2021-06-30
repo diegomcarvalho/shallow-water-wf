@@ -69,4 +69,6 @@ fileID = fopen('y_gen.txt','w');
 fprintf(fileID,'      %8.5f',qA_norm(gen_init:gen_end));
 fprintf(fileID,'\n');
 fclose(fileID);
-printf("%8.5f\n%8.5f\n%8.5f\n", parc1,parc2,parc3)
+fileID = fopen('data.txt','w');
+fprintf(fileID,"%d %d %d\n", parc1,parc2,parc3)
+fclose(fileID);
