@@ -6,7 +6,7 @@ from parsl.data_provider.files import File
 
 parsl.load(config)
 
-
+# classes definition
 class FileFuture(object):
     '''docstring for FileFuture.'''
 
